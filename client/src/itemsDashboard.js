@@ -11,6 +11,11 @@ class ItemsDashboard extends Component {
     ]
   };
 
+  handleAddItemFormSubmit = list => {
+    // console.log('ListDashboard now handling CreateFormSubmit.');
+    this.createList(list);
+  };
+
   render() {
     const allItems = this.state.items.map((item, index) => {
       console.log(index);

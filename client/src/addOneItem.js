@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class AddOneItem extends Component {
   state = {
-    person_name: "",
+    item_name: "",
     item_order: this.props.item_order
   };
 
@@ -15,6 +15,17 @@ class AddOneItem extends Component {
   onChangeItemOrder(e) {
     this.setState({
       item_order: e.target.value
+    });
+  }
+
+  onSubmit(e) {
+    e.preventDefault();
+    console.log(
+      `The values are ${this.state.item_name}, ${this.state.item_order}`
+    );
+    this.setState({
+      item_name: "",
+      item_order: ""
     });
   }
 
