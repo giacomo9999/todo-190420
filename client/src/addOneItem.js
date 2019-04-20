@@ -6,16 +6,13 @@ class AddOneItem extends Component {
       <div>
         <h3>Add An Item</h3>
         <form>
-          <div className="form-group">
+          <div>
             <label>Add New Item: </label>
-            <input type="text" className="form-control" />
+            <input type="text" />
           </div>
-          
-          <div className="form-group">
-            <input
-              type="submit"
-              value="Register Item"
-            />
+
+          <div>
+            <input type="submit" value="Register Item" />
           </div>
         </form>
       </div>
