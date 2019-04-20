@@ -1,6 +1,23 @@
 import React, { Component } from "react";
 
 class AddOneItem extends Component {
+  state = {
+    person_name: "",
+    item_order: this.props.item_order
+  };
+
+  onChangeItemName(e) {
+    this.setState({
+      item_name: e.target.value
+    });
+  }
+
+  onChangeItemOrder(e) {
+    this.setState({
+      item_order: e.target.value
+    });
+  }
+
   render() {
     return (
       <div>

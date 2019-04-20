@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import OneItem from "./oneItem";
 import AddOneItem from "./addOneItem";
 
-class FruitsList extends Component {
+class ItemsDashboard extends Component {
   state = {
     items: [
       { name: "Buy Groceries", order: 1 },
@@ -25,10 +25,10 @@ class FruitsList extends Component {
       <div>
         <h1>To Do List</h1>
         {allItems}
-        <AddOneItem />
+        <AddOneItem item_order={this.state.items.length} />
       </div>
     );
   }
 }
 
-export default FruitsList;
+export default ItemsDashboard;
